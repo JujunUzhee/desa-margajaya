@@ -135,7 +135,7 @@ export default function Header() {
                                         <Link className="dropdown-item w-full text-left" to="/administrasi">Administrasi</Link>
                                     </li>
                                     <li>
-                                        <Link className="dropdown-item w-full text-left" to="/penduduk">Penduduk</Link>
+                                        <Link className="dropdown-item w-full text-left" to="/statistic">Statistic Desa</Link>
                                     </li>
                                     <li>
                                         <hr className="dropdown-divider" />
@@ -211,7 +211,7 @@ export default function Header() {
                             <span>Demografis</span>
                             <div className="pl-4 space-y-1">
                                 <Link className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" to="/administrasi" onClick={handleMobileMenuLinkClick}>Administrasi</Link>
-                                <Link className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" to="/penduduk" onClick={handleMobileMenuLinkClick}>Penduduk</Link>
+                                <Link className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" to="/statistic" onClick={handleMobileMenuLinkClick}>Statistic Desa</Link>
                                 <hr className="border-t border-gray-200" />
                                 <Link className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" to="/wilayah" onClick={handleMobileMenuLinkClick}>Wilayah</Link>
                             </div>

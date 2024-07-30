@@ -42,23 +42,22 @@ const WisataDetail = () => {
             <div className="container mx-auto p-4 bg-white dark:bg-gray-900">
                 <div className="bg-cover bg-center h-96" style={{ backgroundImage: `url(${wisata.imageUrl})` }}>
                     <div className="bg-black bg-opacity-50 h-full flex items-center justify-center">
-                        <h1 className="text-white md:text-5xl text-2xl  text-center font-bold">{wisata.name}</h1>
+                        <h1 className="text-white md:text-5xl text-2xl text-center font-bold">{wisata.name}</h1>
                     </div>
                 </div>
                 <div className="mt-8 flex flex-col md:flex-row">
+                    <div className="md:w-1/3 p-4 flex flex-col gap-4">
+                        <img src={wisata.imageUrl} alt={wisata.name} className="w-full h-48 object-cover rounded-lg shadow-lg" />
+                    </div>
                     <div className="md:w-2/3 p-4">
                         <h2 className="text-2xl font-semibold mb-4">{wisata.name}</h2>
                         <p className="text-gray-700 mb-4">{wisata.description}</p>
-                    </div>
-
-                    <div className="md:w-1/3 p-4 flex flex-col gap-4">
-                        <img src={wisata.imageUrl} alt={wisata.name} className="w-full h-48 object-cover rounded-lg shadow-lg" />
                     </div>
                 </div>
 
                 {/* Card scrollable untuk foto menggunakan react-multi-carousel */}
                 <div className="mt-8">
-                    <h2 className="text-2xl font-semibold mb-4">Photo Gallery</h2>
+                    <h2 className="text-2xl font-semibold mb-4 text-black">Photo Gallery</h2> {/* Text color changed to black */}
                     <Carousel
                         responsive={responsive}
                         swipeable={true}
@@ -74,7 +73,7 @@ const WisataDetail = () => {
                         centerMode={false} // Tidak menggunakan center mode
                     >
                         {wisata.imageUrls.map((url, index) => (
-                            <div key={index} className="flex-shrink-0 md:w-64 w-80">
+                            <div key={index} className="flex-shrink-0 md:w-64 w-80 bg-white"> {/* Background color changed to white */}
                                 <img src={url} alt={`${wisata.name} ${index + 1}`} className="w-full h-48 object-cover rounded-lg shadow-lg" />
                             </div>
                         ))}
@@ -83,7 +82,7 @@ const WisataDetail = () => {
 
                 <div className="mt-8">
                     <h2 className="text-2xl font-semibold mb-4">Location Map</h2>
-                    <div className="w-full h-64">
+                    <div className="w-full h-72">
                         <iframe
                             src={wisata.mapUrl}
                             title={`Map of ${wisata.name}`}

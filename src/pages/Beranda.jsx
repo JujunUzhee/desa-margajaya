@@ -1,30 +1,57 @@
-import { RiBriefcase2Fill, RiCommunityLine } from "react-icons/ri";
-import { FaBookMedical, FaMosque } from "react-icons/fa";
+
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import BeritaComponents from '../components/BeritaComponents';
 import Header from '../components/Header';
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import StatisticDesa from "./StatisticDesa";
 
-export default function Beranda() {
+const Beranda = () => {
+    const imageVariants = {
+        hidden: { opacity: 0, x: -100 },
+        visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }
+    };
+
+    const textVariants = {
+        hidden: { opacity: 0, x: 100 },
+        visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }
+    };
+
     return (
         <div className="bg-base-100 dark:bg-gray-900">
             <Header />
             <div className="container mx-auto py-4 px-4">
-                <div className="flex flex-col md:flex-row items-center bg-gray-100 dark:bg-gray-800 rounded-3xl p-2 md:p-5">
-                    <div className="w-full md:w-1/2 flex justify-center">
-                        <img src="/static/desa.jpg" className="w-full md:w-full h-auto object-contain rounded-md" alt="Desa Margajaya" />
-                    </div>
-                    <div className="w-full md:w-1/2 p-1 md:p-4 text-center md:text-left md:ml-4">
-                        <h1 className='text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100  md:mb-4 mt-1 md:ml-4'>
+                <div className="flex flex-col md:flex-row items-center bg-white rounded-3xl p-3 md:p-5 shadow-xl">
+                    <motion.div
+                        className="w-full md:w-1/2 flex justify-center"
+                        initial="hidden"
+                        animate="visible"
+                        variants={imageVariants}
+                    >
+                        <img src="/static/img/desa.jpeg" className="w-full md:w-full h-auto object-contain rounded-md" alt="Desa Margajaya" />
+                    </motion.div>
+                    <motion.div
+                        className="w-full md:w-1/2 p-1 md:p-4 text-left md:ml-4"
+                        initial="hidden"
+                        animate="visible"
+                        variants={textVariants}
+                    >
+                        <h1 className='text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 md:mb-4  mt-3 mb-2 md:ml-4'>
                             Selamat Datang Di Desa Margajaya
                         </h1>
-                        <p className="text-gray-700 dark:text-gray-300 mb-2">Margajaya merupakan sebuah desa yang terletak dalam (daerah) kecamatan Lemahsugih, Kabupaten Majalengka, Provinsi Jawa Barat, Indonesia.</p>
-                        <p className="text-gray-700 dark:text-gray-300 mb-2">Kode Pos yang digunakan di Margajaya adalah 45465. Terdapat buah desa di dalam daerah kecamatan Lemahsugih.</p>
-                        <p className="text-gray-700 dark:text-gray-300 mb-2">Desa Margajaya memiliki potensi ekonomi dan wisata yang besar dimana desa ini terkenal sebagai desa dengan produktifitas pertanian yang baik. Salah satu komitas unggulannya adalah padi dan sayuran.</p>
-                        <Link to="/sejarah" className="btn btn-success mt-3 text-white">
-                            Selengkapnya
+                        <p className="text-gray-700 dark:text-gray-300 mb-2 md:ml-4">
+                            Margajaya merupakan sebuah desa yang terletak dalam daerah kecamatan Lemahsugih, Kabupaten Majalengka, Provinsi Jawa Barat, Indonesia.
+                        </p>
+                        <p className="text-gray-700 dark:text-gray-300 mb-2 md:ml-4">
+                            Kode Pos yang digunakan di Margajaya adalah 45465. Terdapat buah desa di dalam daerah kecamatan Lemahsugih.
+                        </p>
+                        <p className="text-gray-700 dark:text-gray-300 mb-2 md:ml-4">
+                            Desa Margajaya memiliki potensi ekonomi dan wisata yang besar dimana desa ini terkenal sebagai desa dengan produktivitas pertanian yang baik. Salah satu komoditas unggulannya adalah padi dan sayuran.
+                        </p>
+                        <Link to="/sejarah" className="btn btn-success mt-3 text-white md:ml-4">
+                            Sejarah Desa
                         </Link>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 
@@ -39,9 +66,8 @@ export default function Beranda() {
                             <div className="md:w-2/3">
                                 <div className="p-4 text-left">
                                     <p className="text-gray-700 dark:text-gray-300 mb-4">
-                                        Website resmi desa, kec tanah merah kab bangkalan jawa timur. Media komunikasi dan transparansi pemerintah untuk seluruh masyarakat desa rongdurin. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid autem commodi dignissimos distinctio ducimus facilis fuga fugiat, incidunt labore minus mollitia nihil numquam obcaecati odio provident quisquam sit unde!
-                                    </p>
-                                    <Link to="/sejarah"><button className='btn btn-success text-white rounded-3'>Profil desa</button></Link>
+                                        Website resmi Desa Margajaya, Kec. Lemah Sugih, Kab. Majalengka, Jawa Barat 45465. Sebagai media komunikasi dan transparansi pemerintah, situs ini bertujuan untuk menyediakan informasi penting, layanan, dan pengumuman kepada seluruh masyarakat Desa Margajaya. Di sini, Anda dapat menemukan berita terkini, program pemerintah, dan berbagai layanan administrasi yang diperlukan untuk memudahkan interaksi antara warga dan pemerintah desa. Kami berkomitmen untuk memberikan informasi yang akurat dan terkini demi kemajuan dan kesejahteraan masyarakat.        </p>
+                                    <Link to="/visi-misi" className='btn btn-success text-white rounded-3'>Visi & Misi </Link>
                                 </div>
                             </div>
                         </div>
@@ -49,40 +75,8 @@ export default function Beranda() {
                 </div>
             </div>
 
-
             {/* Statistic Desa */}
-            <div className='container mx-auto text-center mt-10'>
-                <h2 className='text-2xl font-bold'>Statistic Desa</h2>
-                <p className="text-lg text-gray-600">Berikut adalah statistic demografi desa kami</p>
-
-                <div className="flex flex-wrap justify-center mt-5">
-                    <div className="p-4 md:w-1/4 w-full">
-                        <div className="bg-red-100 text-red-700 rounded-3xl p-6 flex flex-col items-center">
-                            <RiBriefcase2Fill className="text-5xl mb-3" />
-                            <h1 className="text-xl font-semibold">Pekerjaan</h1>
-                        </div>
-                    </div>
-                    <div className="p-4 md:w-1/4 w-full">
-                        <div className="bg-blue-100 text-blue-700 rounded-3xl p-6 flex flex-col items-center">
-                            <RiCommunityLine className="text-5xl mb-3" />
-                            <h1 className="text-xl font-semibold">Pendidikan</h1>
-                        </div>
-                    </div>
-                    <div className="p-4 md:w-1/4 w-full">
-                        <div className="bg-yellow-100 text-yellow-700 rounded-3xl p-6 flex flex-col items-center">
-                            <FaMosque className="text-5xl mb-3" />
-                            <h1 className="text-xl font-semibold">Agama</h1>
-                        </div>
-                    </div>
-                    <div className="p-4 md:w-1/4 w-full">
-                        <div className="bg-green-100 text-green-700 rounded-3xl p-6 flex flex-col items-center">
-                            <FaBookMedical className="text-5xl mb-3" />
-                            <h1 className="text-xl font-semibold">Usia Penduduk</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <StatisticDesa />
 
             {/* Berita */}
             <BeritaComponents />
@@ -90,3 +84,5 @@ export default function Beranda() {
         </div>
     );
 }
+
+export default Beranda;
