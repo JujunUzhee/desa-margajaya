@@ -13,7 +13,7 @@ export const informasiData = [
     },
     {
         title: "Taman Kanak-Kanak (TK)",
-        imgSrc: "https://images.pexels.com/photos/1001914/pexels-photo-1001914.jpeg"
+        imgSrc: "/static/img/fasilitas/tk.jpeg",
     },
 
 ];

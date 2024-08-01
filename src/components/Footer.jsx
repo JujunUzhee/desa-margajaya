@@ -39,7 +39,7 @@ export default function Footer() {
                     <div>
                         <h5 className="text-lg font-bold mb-4">Kontak Kami</h5>
                         <p className="text-gray-600">
-                            Alamat: Desa Margajaya,Kec. Lemah Sugih, Majalengka, Jawa Barat 45465
+                            Alamat: Desa Margajaya,Kec. LemahSugih, Majalengka, Jawa Barat 45465
                         </p>
                         <p className="text-gray-600">
                             Telepon: (0233) 123456

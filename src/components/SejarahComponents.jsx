@@ -13,7 +13,7 @@ const SejarahComponents = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 ">
                     <div>
                         <img
-                            src="static/img/Sejarah.jpeg"
+                            src="static/img/desa.jpeg"
                             alt="Sejarah Desa Margajaya"
                             className="w-full rounded-lg shadow-lg "
                         />

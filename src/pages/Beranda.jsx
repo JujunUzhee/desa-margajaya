@@ -67,7 +67,7 @@ const Beranda = () => {
                             <div className="md:w-2/3">
                                 <div className="p-4 text-left">
                                     <p className="text-gray-700 dark:text-gray-300 mb-4">
-                                        Website resmi Desa Margajaya, Kec. Lemah Sugih, Kab. Majalengka, Jawa Barat 45465. Sebagai media komunikasi dan transparansi pemerintah, situs ini bertujuan untuk menyediakan informasi penting, layanan, dan pengumuman kepada seluruh masyarakat Desa Margajaya. Di sini, Anda dapat menemukan berita terkini, program pemerintah, dan berbagai layanan administrasi yang diperlukan untuk memudahkan interaksi antara warga dan pemerintah desa. Kami berkomitmen untuk memberikan informasi yang akurat dan terkini demi kemajuan dan kesejahteraan masyarakat.
+                                        Website resmi Desa Margajaya, Kec. LemahSugih, Kab. Majalengka, Jawa Barat 45465. Sebagai media komunikasi dan transparansi pemerintah, situs ini bertujuan untuk menyediakan informasi penting, layanan, dan pengumuman kepada seluruh masyarakat Desa Margajaya. Di sini, Anda dapat menemukan berita terkini, program pemerintah, dan berbagai layanan administrasi yang diperlukan untuk memudahkan interaksi antara warga dan pemerintah desa. Kami berkomitmen untuk memberikan informasi yang akurat dan terkini demi kemajuan dan kesejahteraan masyarakat.
                                     </p>
                                     <Link to="/visi-misi" className='btn btn-success mt-3 text-slate-50 hover:text-green-500 hover:bg-white hover:border hover:border-green-500'>Visi & Misi </Link>
                                 </div>
