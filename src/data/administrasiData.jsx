@@ -24,12 +24,12 @@ export const jadwalPelayanan = [
     {
         day: "Senin - Jumat",
         time: "08:00 - 15:00",
-        description: "Pelayanan umum dan administrasi desa."
+        description: "Pelayanan umum "
     },
     {
-        day: "Sabtu",
-        time: "08:00 - 12:00",
-        description: "Pelayanan khusus yang telah dijadwalkan."
+        day: "Senin - Jumat",
+        time: "12:00 - 13:00",
+        description: "Istirahat"
     },
     // Tambahkan jadwal lainnya di sini
 ];

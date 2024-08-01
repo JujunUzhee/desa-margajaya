@@ -8,7 +8,7 @@ export const profilPenduduk = {
         { usia: "46-60", jumlah: 200 },
         { usia: "60+", jumlah: 150 },
     ],
-    jenisKelamin: { lakiLaki: 600, perempuan: 600 },
+    jenisKelamin: { lakiLaki: 2529, perempuan: 2411 },
     pekerjaan: [
         { jenis: "Petani", jumlah: 300 },
         { jenis: "Pedagang", jumlah: 150 },

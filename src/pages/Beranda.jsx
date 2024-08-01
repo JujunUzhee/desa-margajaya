@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import BeritaComponents from '../components/BeritaComponents';
 import Header from '../components/Header';
 import Footer from "../components/Footer";
-import StatisticDesa from "./StatisticDesa";
+import InformasiComponents from "../components/InformasiComponents";
 
 const Beranda = () => {
     const imageVariants = {
@@ -48,9 +48,12 @@ const Beranda = () => {
                         <p className="text-gray-700 dark:text-gray-300 mb-2 md:ml-4">
                             Desa Margajaya memiliki potensi ekonomi dan wisata yang besar dimana desa ini terkenal sebagai desa dengan produktivitas pertanian yang baik. Salah satu komoditas unggulannya adalah padi dan sayuran.
                         </p>
-                        <Link to="/sejarah" className="btn btn-success mt-3 text-white md:ml-4">
+                        <Link
+                            to="/sejarah"
+                            className="btn btn-success mt-3 text-slate-50 md:ml-4 hover:text-green-500 hover:bg-white hover:border hover:border-green-500">
                             Sejarah Desa
                         </Link>
+
                     </motion.div>
                 </div>
             </div>
@@ -67,7 +70,7 @@ const Beranda = () => {
                                 <div className="p-4 text-left">
                                     <p className="text-gray-700 dark:text-gray-300 mb-4">
                                         Website resmi Desa Margajaya, Kec. Lemah Sugih, Kab. Majalengka, Jawa Barat 45465. Sebagai media komunikasi dan transparansi pemerintah, situs ini bertujuan untuk menyediakan informasi penting, layanan, dan pengumuman kepada seluruh masyarakat Desa Margajaya. Di sini, Anda dapat menemukan berita terkini, program pemerintah, dan berbagai layanan administrasi yang diperlukan untuk memudahkan interaksi antara warga dan pemerintah desa. Kami berkomitmen untuk memberikan informasi yang akurat dan terkini demi kemajuan dan kesejahteraan masyarakat.        </p>
-                                    <Link to="/visi-misi" className='btn btn-success text-white rounded-3'>Visi & Misi </Link>
+                                    <Link to="/visi-misi" className='btn btn-success mt-3 text-slate-50  hover:text-green-500 hover:bg-white hover:border hover:border-green-500'>Visi & Misi </Link>
                                 </div>
                             </div>
                         </div>
@@ -75,8 +78,8 @@ const Beranda = () => {
                 </div>
             </div>
 
-            {/* Statistic Desa */}
-            <StatisticDesa />
+            {/* Fasilitas Desa */}
+            <InformasiComponents />
 
             {/* Berita */}
             <BeritaComponents />

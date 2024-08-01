@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Modal from 'react-modal';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { wisataData } from '../data/wisataData';
 import Carousel from 'react-multi-carousel';
 import ReactPlayer from 'react-player';
 import 'react-multi-carousel/lib/styles.css';
+
+Modal.setAppElement('#root');
 
 // Pengaturan responsif untuk carousel
 const responsive = {
@@ -31,10 +34,22 @@ const WisataDetail = () => {
     const { id } = useParams();
     const wisata = wisataData.find((w) => w.id === parseInt(id));
     const [isPlaying, setIsPlaying] = useState(false);
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalImage, setModalImage] = useState('');
 
     if (!wisata) {
         return <div className="text-center mt-10">Wisata tidak ditemukan</div>;
     }
+
+    const openModal = (image) => {
+        setModalImage(image);
+        setModalIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalIsOpen(false);
+        setModalImage('');
+    };
 
     return (
         <>
@@ -55,9 +70,8 @@ const WisataDetail = () => {
                     </div>
                 </div>
 
-                {/* Card scrollable untuk foto menggunakan react-multi-carousel */}
                 <div className="mt-8">
-                    <h2 className="text-2xl font-semibold mb-4 text-black">Photo Gallery</h2> {/* Text color changed to black */}
+                    <h2 className="text-2xl font-semibold mb-4 text-black">Photo Gallery</h2>
                     <Carousel
                         responsive={responsive}
                         swipeable={true}
@@ -70,11 +84,16 @@ const WisataDetail = () => {
                         transitionDuration={500}
                         containerClass="carousel-container"
                         itemClass="carousel-item"
-                        centerMode={false} // Tidak menggunakan center mode
+                        centerMode={false}
                     >
                         {wisata.imageUrls.map((url, index) => (
-                            <div key={index} className="flex-shrink-0 md:w-64 w-80 bg-white"> {/* Background color changed to white */}
-                                <img src={url} alt={`${wisata.name} ${index + 1}`} className="w-full h-48 object-cover rounded-lg shadow-lg" />
+                            <div key={index} className="flex-shrink-0 md:w-72 w-80 bg-white">
+                                <img
+                                    src={url}
+                                    alt={`${wisata.name} ${index + 1}`}
+                                    className="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer"
+                                    onClick={() => openModal(url)}
+                                />
                             </div>
                         ))}
                     </Carousel>
@@ -98,22 +117,39 @@ const WisataDetail = () => {
 
                 <div className="mt-8">
                     <h2 className="text-2xl font-semibold mb-4">Video Vlog</h2>
-                    <div className="flex justify-center">
-                        <div className="w-full h-64">
-                            <ReactPlayer
-                                url={wisata.videoUrl}
-                                playing={isPlaying}
-                                controls={true}
-                                onPlay={() => setIsPlaying(true)}
-                                onPause={() => setIsPlaying(false)}
-                                width="100%"
-                                height="100%"
-                            />
-                        </div>
+                    <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}> {/* 16:9 Aspect Ratio */}
+                        <ReactPlayer
+                            url={wisata.videoUrl}
+                            playing={isPlaying}
+                            controls={true}
+                            onPlay={() => setIsPlaying(true)}
+                            onPause={() => setIsPlaying(false)}
+                            width="100%"
+                            height="70%"
+                            style={{ position: 'absolute', top: 0, left: 0 }}
+                        />
                     </div>
                 </div>
             </div>
             <Footer />
+
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel="Image Modal"
+                className="flex items-center justify-center"
+                overlayClassName="fixed inset-0 bg-black bg-opacity-75"
+            >
+                <div className="relative">
+                    <button
+                        onClick={closeModal}
+                        className="absolute top-0 right-0 text-black bg-green-100 rounded-full p-2 m-2 focus:outline-none"
+                    >
+                        X
+                    </button>
+                    <img src={modalImage} alt="Enlarged" className="w-full h-auto max-h-screen object-contain" />
+                </div>
+            </Modal>
         </>
     );
 };

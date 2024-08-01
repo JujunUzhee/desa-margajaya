@@ -10,7 +10,7 @@ import Administrasi from './pages/Administrasi';
 import Sejarah from './pages/Sejarah';
 import VisiMisi from './pages/VisiMisi';
 import Wilayah from './pages/Wilayah';
-import StatisticDesa from './pages/StatisticDesa';
+
 
 export default function AppRouter() {
     return (
@@ -22,7 +22,6 @@ export default function AppRouter() {
             <Route path="visi-misi" element={<VisiMisi />} />
             <Route path="agenda" element={<Agenda />} />
             <Route path="wilayah" element={<Wilayah />} />
-            <Route path="statistic" element={<StatisticDesa />} />
             <Route path="administrasi" element={<Administrasi />} />
             <Route path="berita" element={<Berita />} />
             <Route path="wisata/detail/:id" element={<WisataDetail />} />

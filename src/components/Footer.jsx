@@ -21,16 +21,16 @@ export default function Footer() {
                                 <Link to="/" className="text-gray-600 hover:text-gray-800">Home</Link>
                             </li>
                             <li>
-                                <Link to="/profile" className="text-gray-600 hover:text-gray-800">Profile</Link>
+                                <Link to="/sejarah" className="text-gray-600 hover:text-gray-800">Sejarah</Link>
                             </li>
                             <li>
-                                <Link to="/informasi" className="text-gray-600 hover:text-gray-800">Informasi</Link>
+                                <Link to="/visi-misi" className="text-gray-600 hover:text-gray-800">Visi & Misi</Link>
                             </li>
                             <li>
-                                <Link to="/demografis" className="text-gray-600 hover:text-gray-800">Demografis</Link>
+                                <Link to="/wilayah" className="text-gray-600 hover:text-gray-800">Wilayah</Link>
                             </li>
                             <li>
-                                <Link to="/katalog" className="text-gray-600 hover:text-gray-800">Katalog</Link>
+                                <Link to="/wisata" className="text-gray-600 hover:text-gray-800">Gallery Wisata</Link>
                             </li>
                         </ul>
                     </div>
@@ -39,7 +39,7 @@ export default function Footer() {
                     <div>
                         <h5 className="text-lg font-bold mb-4">Kontak Kami</h5>
                         <p className="text-gray-600">
-                            Alamat: Jl. Raya No.123, Desa Margajaya, Majalengka, Jawa Barat
+                            Alamat: Desa Margajaya,Kec. Lemah Sugih, Majalengka, Jawa Barat 45465
                         </p>
                         <p className="text-gray-600">
                             Telepon: (0233) 123456
