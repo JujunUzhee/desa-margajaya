@@ -3,7 +3,7 @@ export const wisataData = [
         id: 1,
         name: 'Curug Katumbiri',
         location: '255Q+666, Margajaya, Kec. Lemahsugih, Kabupaten Majalengka, Jawa Barat 45465',
-        description: 'Terletak di jantung alam, Curug Katumbiri menawarkan pemandangan air terjun yang menakjubkan dengan suasana tenang dan udara segar. Sempurna untuk melepas penat dari rutinitas sehari-hari.',
+        description: 'Terletak di tengah keindahan alam, Curug Katumbiri menyuguhkan pemandangan air terjun yang memukau dengan suasana damai dan udara segar. Tempat yang sempurna untuk melepas penat dan menyegarkan pikiran dari rutinitas sehari-hari.',
         imageUrl: '/static/img/katumbiri/katumbiri1.jpeg',
         imageUrls: [
             '/static/img/katumbiri/katumbiri1.jpeg',
@@ -20,7 +20,7 @@ export const wisataData = [
         id: 2,
         name: 'Curug Cilamega',
         location: 'Margajaya, Kec. Lemahsugih, Kabupaten Majalengka, Jawa Barat 45465',
-        description: 'Curug Ciwanda, dengan aliran air yang jernih dan segar, dikelilingi oleh pepohonan rindang yang menambah kesan alami. Tempat yang ideal untuk piknik keluarga dan petualangan hiking. Suara gemericik air yang menenangkan dan udara segar yang menyelimuti menjadikan Curug Ciwanda destinasi yang sempurna untuk melarikan diri dari hiruk pikuk kota. Dengan berbagai rute hiking yang menantang namun menyenangkan, serta spot-spot piknik yang tersembunyi di antara pepohonan, setiap sudut di sini menawarkan keindahan alam yang mempesona.',
+        description: 'Curug Cilamega, dengan aliran air yang jernih dan segar, menawarkan suasana alami yang menenangkan. Tempat ini ideal untuk piknik keluarga. Suara gemericik air yang menenangkan, udara segar yang menyelimuti, serta pemandangan pelangi yang muncul setelah hujan menjadikan Curug Cilamega destinasi yang sempurna untuk melarikan diri dari hiruk pikuk kota.',
         imageUrl: '/static/img/ciwanda/ciwanda1.jpeg',
         imageUrls: [
             '/static/img/ciwanda/ciwanda1.jpeg',
@@ -37,7 +37,7 @@ export const wisataData = [
         id: 3,
         name: 'Curug Terowongan',
         location: 'Margajaya, Kec. Lemahsugih, Kabupaten Majalengka, Jawa Barat 45465',
-        description: 'Curug Cilamega menawarkan pengalaman unik dengan air terjun yang megah dan kolam alami yang menenangkan. Sempurna untuk berenang atau sekadar bersantai menikmati keindahan alam.',
+        description: 'Curug Terowongan, dengan aliran air yang kuat dan jernih, berfungsi sebagai sumber utama untuk mengaliri perairan ke Dusun Ci Bulakan. Dikelilingi oleh pemandangan alam yang asri, curug ini menawarkan keindahan alami yang mempesona. Selain sebagai sumber air penting bagi dusun, Curug Terowongan juga menjadi daya tarik bagi wisatawan yang ingin menikmati keindahan dan kesejukan alam.',
         imageUrl: '/static/img/cilamega/curug1.jpeg',
         imageUrls: [
             '/static/img/cilamega/curug1.jpeg',
@@ -54,7 +54,7 @@ export const wisataData = [
         id: 4,
         name: 'Curug Cigadora',
         location: 'Margajaya, Kec. Lemahsugih, Kabupaten Majalengka, Jawa Barat 45465',
-        description: 'Curug Cigadora menawarkan pengalaman unik dengan air terjun yang megah dan kolam alami yang menenangkan. Sempurna untuk berenang atau sekadar bersantai menikmati keindahan alam.',
+        description: 'CCurug Cigadora, dengan aliran air yang jernih dan segar, berfungsi sebagai sumber utama untuk mengaliri perairan ke Dusun Mananti. Curug ini dikelilingi oleh pemandangan sawah yang indah dan hijau, menambah pesona alami yang menenangkan. Selain menjadi sumber air penting bagi dusun, Curug Cigadora juga menawarkan keindahan alam yang memukau bagi siapa saja yang mengunjunginya.',
         imageUrl: '/static/img/cigadora/cigadora1.jpeg',
         imageUrls: [
             '/static/img/cigadora/cigadora1.jpeg',
@@ -69,9 +69,9 @@ export const wisataData = [
     },
     {
         id: 5,
-        name: 'Curug Cikiwung',
+        name: 'Curug Cikiung',
         location: 'Margajaya, Kec. Lemahsugih, Kabupaten Majalengka, Jawa Barat 45465',
-        description: 'Curug Cikiwung menawarkan pengalaman unik dengan air terjun yang megah dan kolam alami yang menenangkan. Sempurna untuk berenang atau sekadar bersantai menikmati keindahan alam.',
+        description: 'Curug Cikiung dinamai sesuai dengan tanah Cikiung, tempat di mana air terjun ini berada. Dengan aliran air yang jernih dan segar, Curug Cikiung menawarkan pemandangan alam yang memukau dan suasana yang damai. Air terjun ini tidak hanya menjadi sumber keindahan alami tetapi juga menjadi bagian penting dari sejarah dan identitas daerah tersebut. Menjadi destinasi yang sempurna untuk melarikan diri dari hiruk pikuk kota, Curug Cikiung memberikan pengalaman yang menenangkan dan menyegarkan bagi para pengunjung.',
         imageUrl: '/static/img/cikiwung/cikiwung1.jpeg',
         imageUrls: [
             '/static/img/cikiwung/cikiwung1.jpeg',
