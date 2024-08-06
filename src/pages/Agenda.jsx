@@ -7,7 +7,9 @@ const Agenda = () => {
     return (
         <div className='bg-white dark:bg-gray-900'>
             <Header />
-            <AgendaComponents />
+            <main className="flex-grow mt-20">
+                <AgendaComponents />
+            </main>
             <Footer />
         </div>
     )

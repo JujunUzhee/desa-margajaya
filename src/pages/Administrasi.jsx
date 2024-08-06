@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 const Administrasi = () => {
     return (
-        <div className='bg-white dark:bg-gray-900'>
+        <div className='bg-white dark:text-white dark:bg-gray-900'>
             <Header />
             <div className="p-4">
                 <AdministrasiComponents />

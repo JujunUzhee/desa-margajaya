@@ -59,8 +59,8 @@ export default function Header() {
     };
 
     return (
-        <nav className="bg-white shadow-sm">
-            <div className="container mx-auto px-4">
+        <nav className="bg-slate-50 shadow-sm fixed w-full z-50 top-0">
+            <div className="container mx-auto px-4 ">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                         <img id="logo-ri" src="/static/img/logo_majalengka.jpeg" alt="logo" className="w-9 h-9 ml-10" />

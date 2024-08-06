@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const InformasiCard = ({ title, imgSrc }) => {
     return (
         <motion.div
-            className="card card-compact bg-base-100 w-96 shadow-xl"
+            className="card card-compact bg-slate-50 w-96 shadow-xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
         >

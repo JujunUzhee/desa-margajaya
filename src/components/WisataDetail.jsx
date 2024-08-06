@@ -54,7 +54,7 @@ const WisataDetail = () => {
     return (
         <>
             <Header />
-            <div className="container mx-auto p-4 bg-white dark:bg-gray-900">
+            <div className="container mx-auto p-4 bg-white mt-16">
                 <div className="bg-cover bg-center h-96" style={{ backgroundImage: `url(${wisata.imageUrl})` }}>
                     <div className="bg-black bg-opacity-50 h-full flex items-center justify-center">
                         <h1 className="text-white md:text-5xl text-2xl text-center font-bold">{wisata.name}</h1>

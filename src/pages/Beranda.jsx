@@ -17,10 +17,10 @@ const Beranda = () => {
     };
 
     return (
-        <div className="bg-base-100 dark:bg-gray-900">
+        <div className="bg-white ">
             <Header />
             <div className="container mx-auto py-4 px-4">
-                <div className="flex flex-col md:flex-row items-center bg-white dark:bg-white-bg-dark rounded-3xl p-3 md:p-5 shadow-xl">
+                <div className="flex flex-col md:flex-row items-center rounded-3xl p-3 md:p-5 shadow-xl mt-16  bg-slate-50">
                     <motion.div
                         className="w-full md:w-1/2 flex justify-center"
                         initial="hidden"
@@ -35,7 +35,7 @@ const Beranda = () => {
                         animate="visible"
                         variants={textVariants}
                     >
-                        <h1 className='text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 md:mb-4 mt-3 mb-2 md:ml-4'>
+                        <h1 className='text-2xl md:text-3xl font-bold text-gray-900 dark:text-white md:mb-4 mt-3 mb-2 md:ml-4'>
                             Selamat Datang Di Desa Margajaya
                         </h1>
                         <p className="text-gray-700 dark:text-gray-300 mb-2 md:ml-4">

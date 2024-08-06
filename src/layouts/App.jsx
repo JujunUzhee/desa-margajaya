@@ -5,7 +5,7 @@ import "../index.css";
 function App({ children }) {
   return (
     <>
-      <main>
+      <main className='bg-white'>
         {children}
       </main>
 

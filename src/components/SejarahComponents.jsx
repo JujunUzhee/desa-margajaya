@@ -3,7 +3,7 @@ import ReactTypingEffect from 'react-typing-effect';
 
 const SejarahComponents = () => {
     return (
-        <div className="p-6 bg-gray-100">
+        <div className="p-6 ">
             <div className="max-w-7xl mx-auto">
                 <h5 className="text-3xl font-semibold mb-4 text-center">
                     <ReactTypingEffect text="Sejarah Desa Margajaya" />
@@ -35,7 +35,7 @@ const SejarahComponents = () => {
                 <div className="accordion">
                     <div className="accordion-item mb-4">
                         <button
-                            className="accordion-header text-left w-full bg-gray-200 p-4 rounded-t-lg focus:outline-none"
+                            className="accordion-header text-left w-full bg-gray-100 p-4 rounded-t-lg focus:outline-none"
                             onClick={() => document.getElementById('item1').classList.toggle('hidden')}
                         >
                             Pemberian Nama Desa
@@ -48,7 +48,7 @@ const SejarahComponents = () => {
                     </div>
                     <div className="accordion-item mb-4">
                         <button
-                            className="accordion-header text-left w-full bg-gray-200 p-4 rounded-t-lg focus:outline-none"
+                            className="accordion-header text-left w-full bg-gray-100 p-4 rounded-t-lg focus:outline-none"
                             onClick={() => document.getElementById('item2').classList.toggle('hidden')}
                         >
                             Batas Wilayah Desa
@@ -67,7 +67,7 @@ const SejarahComponents = () => {
                     </div>
                     <div className="accordion-item mb-4">
                         <button
-                            className="accordion-header text-left w-full bg-gray-200 p-4 rounded-t-lg focus:outline-none"
+                            className="accordion-header text-left w-full bg-gray-100 p-4 rounded-t-lg focus:outline-none"
                             onClick={() => document.getElementById('item3').classList.toggle('hidden')}
                         >
                             Pusat Pemerintahan Desa
@@ -85,7 +85,7 @@ const SejarahComponents = () => {
                     </div>
                     <div className="accordion-item mb-4">
                         <button
-                            className="accordion-header text-left w-full bg-gray-200 p-4 rounded-t-lg focus:outline-none"
+                            className="accordion-header text-left w-full bg-gray-100 p-4 rounded-t-lg focus:outline-none"
                             onClick={() => document.getElementById('item4').classList.toggle('hidden')}
                         >
                             Kepemimpinan Desa

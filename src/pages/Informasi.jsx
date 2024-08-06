@@ -7,9 +7,9 @@ const Informasi = () => {
     return (
         <div className='bg-white dark:bg-gray-900'>
             <Header />
-            <div className="p-4">
+            <main className="flex-grow mt-20">
                 <InformasiComponents />
-            </div>
+            </main>
             <Footer />
         </div>
     )

@@ -7,7 +7,9 @@ const Wilayah = () => {
     return (
         <div className='bg-white dark:bg-gray-900'>
             <Header />
-            <WilayahComponents />
+            <main className="flex-grow mt-16">
+                <WilayahComponents />
+            </main>
             <Footer />
         </div>
     )

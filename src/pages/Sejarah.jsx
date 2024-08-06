@@ -7,7 +7,10 @@ const Sejarah = () => {
     return (
         <div className='bg-white dark:bg-gray-900'>
             <Header />
-            <SejarahComponents />
+            <main className="flex-grow mt-16"> {/* Tambahkan margin-top yang cukup besar */}
+                <SejarahComponents />
+            </main>
+
             <Footer />
         </div>
     )

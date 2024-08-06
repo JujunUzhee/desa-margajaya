@@ -7,7 +7,9 @@ const VisiMisi = () => {
     return (
         <div className='bg-white dark:bg-gray-900'>
             <Header />
-            <VisiMisiComponents />
+            <main className="flex-grow mt-16">
+                <VisiMisiComponents />
+            </main>
             <Footer />
         </div>
     )

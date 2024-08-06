@@ -9,7 +9,7 @@ const truncateText = (text, maxLength) => {
 
 const CardWisata = ({ wisata }) => {
     return (
-        <div className="card card-compact bg-base-100 w-35 shadow-xl dark:bg-base-100">
+        <div className="card card-compact bg-slate-50 w-35 shadow-xl ">
             <figure>
                 <img
                     src={wisata.imageUrl}
