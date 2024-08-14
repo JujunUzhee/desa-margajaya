@@ -4,7 +4,7 @@ export default function CardBerita({ title, author, date, description, imgSrc })
     return (
         <>
             <div className="card shadow-sm border-light">
-                <img src={imgSrc} className="card-img-top img-berita" alt={title} />
+                <img src={imgSrc} className="card-img-top img-berita rounded-xl" alt={title} />
                 <div className="card-body">
                     <h5 className="card-title mb-0">{title}</h5>
                     <div className="meta my-2 d-flex align-items-center gap-1">

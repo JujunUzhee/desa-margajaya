@@ -7,6 +7,9 @@ module.exports = {
       boxShadow: {
         t: "0 -2px 4px rgba(0, 0, 0, 0.05)",
       },
+      colors: {
+        greenPrimary: "#00A96E",
+      },
     },
   },
   plugins: [require("daisyui")],

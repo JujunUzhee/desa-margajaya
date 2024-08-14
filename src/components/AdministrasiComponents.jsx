@@ -7,7 +7,7 @@ import ReactTypingEffect from 'react-typing-effect';
 const AdministrasiComponents = () => {
     return (
         <div className="container mx-auto my-10">
-            <h5 className="text-3xl font-semibold mb-4 text-center">
+            <h5 className="text-3xl font-semibold mb-4 text-center text-greenPrimary">
                 <ReactTypingEffect text="Layanan Administrasi Desa" />
             </h5>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">

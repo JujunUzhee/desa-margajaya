@@ -17,7 +17,7 @@ const Wisata = () => {
         <div className="bg-white dark:bg-gray-900">
             <Header />
             <div className="container mx-auto p-4 mt-16">
-                <h5 className="text-3xl font-semibold mb-4 text-center">
+                <h5 className="text-3xl font-semibold mb-4 text-center text-greenPrimary">
                     <ReactTypingEffect text="Obyek Wisata Curug" />
                 </h5>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

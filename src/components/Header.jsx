@@ -59,21 +59,21 @@ export default function Header() {
     };
 
     return (
-        <nav className="bg-slate-50 shadow-sm fixed w-full z-50 top-0">
+        <nav className="backdrop-blur-md shadow-sm fixed w-full z-50 top-0 ">
             <div className="container mx-auto px-4 ">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
-                        <img id="logo-ri" src="/static/img/logo_majalengka.jpeg" alt="logo" className="w-9 h-9 ml-10" />
-                        <span id="desa" className="ml-4 -mt-2 font-semibold">Desa Margajaya</span>
+                        <img id="logo-ri" src="/static/img/logo_majalengka.png" alt="logo" className="w-7 h-7 ml-10" />
+                        <span id="desa" className="ml-4  font-semibold">Desa Margajaya</span>
                     </div>
-                    <div className="hidden md:flex items-center space-x-4">
-                        <Link to="/" className="nav-link">Home</Link>
+                    <div className="hidden md:flex items-center space-x-4 ">
+                        <Link to="/" className="nav-link hover:text-greenPrimary">Home</Link>
 
                         {/* Profile Dropdown */}
                         <div className="relative" ref={profileRef}>
                             <button
                                 onClick={() => handleDropdownClick(setProfileDropdownOpen)}
-                                className="nav-link"
+                                className="nav-link hover:text-greenPrimary"
                                 aria-expanded={isProfileDropdownOpen}
                                 aria-controls="profile-dropdown"
                             >
@@ -95,7 +95,7 @@ export default function Header() {
                         <div className="relative" ref={informasiRef}>
                             <button
                                 onClick={() => handleDropdownClick(setInformasiDropdownOpen)}
-                                className="nav-link"
+                                className="nav-link hover:text-greenPrimary"
                                 aria-expanded={isInformasiDropdownOpen}
                                 aria-controls="informasi-dropdown"
                             >
@@ -123,7 +123,7 @@ export default function Header() {
                         <div className="relative" ref={demografisRef}>
                             <button
                                 onClick={() => handleDropdownClick(setDemografisDropdownOpen)}
-                                className="nav-link"
+                                className="nav-link hover:text-greenPrimary"
                                 aria-expanded={isDemografisDropdownOpen}
                                 aria-controls="demografis-dropdown"
                             >
@@ -148,7 +148,7 @@ export default function Header() {
                         <div className="relative" ref={katalogRef}>
                             <button
                                 onClick={() => handleDropdownClick(setKatalogDropdownOpen)}
-                                className="nav-link"
+                                className="nav-link hover:text-greenPrimary"
                                 aria-expanded={isKatalogDropdownOpen}
                                 aria-controls="katalog-dropdown"
                             >

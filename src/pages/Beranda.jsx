@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+
 import BeritaComponents from '../components/BeritaComponents';
 import Header from '../components/Header';
 import Footer from "../components/Footer";
 import InformasiComponents from "../components/InformasiComponents";
+import AboutComponent from "../components/aboutComponent";
+import ReactTypingEffect from "react-typing-effect";
 
 const Beranda = () => {
     const imageVariants = {
@@ -20,69 +22,61 @@ const Beranda = () => {
         <div className="bg-white ">
             <Header />
             <div className="container mx-auto py-4 px-4">
-                <div className="flex flex-col md:flex-row items-center rounded-3xl p-3 md:p-5 shadow-xl mt-16  bg-slate-50">
+                <div className="text-center mt-10">
+                    <h1 className="text-3xl font-bold text-gray-900 mb-6 mt-5">
+                        <ReactTypingEffect text="SELAMAT DATANG DI DESA MARGAJAYA" />
+
+                    </h1>
+
+                    <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+                        {/* Gambar Kiri */}
+                        <motion.div
+                            className="w-full md:w-1/2"
+                            initial="hidden"
+                            animate="visible"
+                            variants={imageVariants}
+                        >
+                            <img src="/static/img/desa2.jpeg" className="w-full h-auto object-cover rounded-lg shadow-lg" alt="Desa Margajaya" />
+                        </motion.div>
+
+                        {/* Gambar Kanan */}
+                        <motion.div
+                            className="w-full md:w-1/2"
+                            initial="hidden"
+                            animate="visible"
+                            variants={imageVariants}
+                        >
+                            <img src="/static/img/desa.jpeg" className="w-full h-auto object-cover rounded-lg shadow-lg mb-4" alt="Desa Margajaya" />
+                        </motion.div>
+                    </div>
+
                     <motion.div
-                        className="w-full md:w-1/2 flex justify-center"
-                        initial="hidden"
-                        animate="visible"
-                        variants={imageVariants}
-                    >
-                        <img src="/static/img/desa.jpeg" className="w-full md:w-full h-auto object-contain rounded-md" alt="Desa Margajaya" />
-                    </motion.div>
-                    <motion.div
-                        className="w-full md:w-1/2 p-1 md:p-4 text-left md:ml-4"
+                        className="mt-6"
                         initial="hidden"
                         animate="visible"
                         variants={textVariants}
                     >
-                        <h1 className='text-2xl md:text-3xl font-bold text-gray-900 dark:text-white md:mb-4 mt-3 mb-2 md:ml-4'>
-                            Selamat Datang Di Desa Margajaya
-                        </h1>
-                        <p className="text-gray-700 dark:text-gray-300 mb-2 md:ml-4">
-                            Margajaya merupakan sebuah desa yang terletak dalam daerah kecamatan Lemahsugih, Kabupaten Majalengka, Provinsi Jawa Barat, Indonesia.
+                        <p className="text-gray-700 leading-relaxed text-lg md:text-lg mt-6">
+                            Margajaya merupakan sebuah desa yang terletak dalam daerah kecamatan Lemahsugih, Kabupaten Majalengka, Provinsi Jawa Barat, Indonesia. Kode Pos yang digunakan di Margajaya adalah 45465. Terdapat buah desa di dalam daerah kecamatan Lemahsugih. Desa Margajaya memiliki potensi ekonomi dan wisata yang besar dimana desa ini terkenal sebagai desa dengan produktivitas pertanian yang baik. Salah satu komoditas unggulannya adalah padi dan sayuran.
                         </p>
-                        <p className="text-gray-700 dark:text-gray-300 mb-2 md:ml-4">
-                            Kode Pos yang digunakan di Margajaya adalah 45465. Terdapat buah desa di dalam daerah kecamatan Lemahsugih.
-                        </p>
-                        <p className="text-gray-700 dark:text-gray-300 mb-2 md:ml-4">
-                            Desa Margajaya memiliki potensi ekonomi dan wisata yang besar dimana desa ini terkenal sebagai desa dengan produktivitas pertanian yang baik. Salah satu komoditas unggulannya adalah padi dan sayuran.
-                        </p>
-                        <Link
-                            to="/sejarah"
-                            className="btn btn-success mt-3 text-slate-50 md:ml-4 hover:text-green-500 hover:bg-white hover:border hover:border-green-500">
-                            Sejarah Desa
-                        </Link>
                     </motion.div>
                 </div>
             </div>
 
             {/* card title */}
-            <div className="container mx-auto mt-5 px-4">
-                <div className="flex justify-center">
-                    <div className="bg-transparent border-0 p-2">
-                        <div className="flex flex-col md:flex-row items-center">
-                            <div className="flex justify-center items-center md:w-1/3 mb-4 md:mb-0">
-                                <img src="/static/img/logo_majalengka.jpeg" className="w-2/4 h-auto mx-auto rounded-lg" alt="Logo Bangkalan" />
-                            </div>
-                            <div className="md:w-2/3">
-                                <div className="p-4 text-left">
-                                    <p className="text-gray-700 dark:text-gray-300 mb-4">
-                                        Website resmi Desa Margajaya, Kec. LemahSugih, Kab. Majalengka, Jawa Barat 45465. Sebagai media komunikasi dan transparansi pemerintah, situs ini bertujuan untuk menyediakan informasi penting, layanan, dan pengumuman kepada seluruh masyarakat Desa Margajaya. Di sini, Anda dapat menemukan berita terkini, program pemerintah, dan berbagai layanan administrasi yang diperlukan untuk memudahkan interaksi antara warga dan pemerintah desa. Kami berkomitmen untuk memberikan informasi yang akurat dan terkini demi kemajuan dan kesejahteraan masyarakat.
-                                    </p>
-                                    <Link to="/visi-misi" className='btn btn-success mt-3 text-slate-50 hover:text-green-500 hover:bg-white hover:border hover:border-green-500'>Visi & Misi </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <AboutComponent />
             {/* Fasilitas Desa */}
             <InformasiComponents />
 
             {/* Berita */}
-            <BeritaComponents />
-            <Footer />
+            <div className="bg-greenPrimary py-5 shadow-lg">
+                <BeritaComponents isHomePage={true} />
+            </div>
+
+            <div className="pt-5">
+                <Footer />
+            </div>
+
         </div>
     );
 }

@@ -5,7 +5,7 @@ const SejarahComponents = () => {
     return (
         <div className="p-6 ">
             <div className="max-w-7xl mx-auto">
-                <h5 className="text-3xl font-semibold mb-4 text-center">
+                <h5 className="text-3xl font-semibold mb-4 text-center text-greenPrimary">
                     <ReactTypingEffect text="Sejarah Desa Margajaya" />
                 </h5>
 
@@ -35,26 +35,26 @@ const SejarahComponents = () => {
                 <div className="accordion">
                     <div className="accordion-item mb-4">
                         <button
-                            className="accordion-header text-left w-full bg-gray-100 p-4 rounded-t-lg focus:outline-none"
+                            className="accordion-header text-left w-full bg-greenPrimary p-4 rounded-t-lg text-white focus:outline-none"
                             onClick={() => document.getElementById('item1').classList.toggle('hidden')}
                         >
                             Pemberian Nama Desa
                         </button>
                         <div id="item1" className="accordion-content hidden p-4 bg-white border rounded-b-lg">
-                            <p>
+                            <p className="text-gray-900">
                                 Pada tanggal 10 Maret 1981, para tokoh masyarakat mengadakan musyawarah dengan agenda pemberian nama Desa yaitu Desa Margajaya. Kata Margajaya diambil dari kata "Marga" yang berarti kelompok keluarga atau wilayah, dan "Jaya" yang berarti kemakmuran atau kejayaan.
                             </p>
                         </div>
                     </div>
                     <div className="accordion-item mb-4">
                         <button
-                            className="accordion-header text-left w-full bg-gray-100 p-4 rounded-t-lg focus:outline-none"
+                            className="accordion-header text-left w-full bg-greenPrimary p-4 rounded-t-lg text-white focus:outline-none"
                             onClick={() => document.getElementById('item2').classList.toggle('hidden')}
                         >
                             Batas Wilayah Desa
                         </button>
                         <div id="item2" className="accordion-content hidden p-4 bg-white border rounded-b-lg">
-                            <p>
+                            <p className="text-gray-900">
                                 Batas-batas Desa Margajaya adalah sebagai berikut:
                                 <ul className="list-disc ml-6 mt-2">
                                     <li>Sebelah Utara berbatasan dengan Desa Sukajadi</li>
@@ -67,13 +67,13 @@ const SejarahComponents = () => {
                     </div>
                     <div className="accordion-item mb-4">
                         <button
-                            className="accordion-header text-left w-full bg-gray-100 p-4 rounded-t-lg focus:outline-none"
+                            className="accordion-header text-left w-full bg-greenPrimary p-4 rounded-t-lg text-white focus:outline-none"
                             onClick={() => document.getElementById('item3').classList.toggle('hidden')}
                         >
                             Pusat Pemerintahan Desa
                         </button>
                         <div id="item3" className="accordion-content hidden p-4 bg-white border rounded-b-lg">
-                            <p>
+                            <p className="text-gray-900">
                                 Pusat Pemerintahan Desa Margajaya:
                                 <ul className="list-disc ml-6 mt-2">
                                     <li>Pada tahun 1981 hingga 1986, tempat pemerintahan di Blok Pasirhanja</li>
@@ -85,13 +85,13 @@ const SejarahComponents = () => {
                     </div>
                     <div className="accordion-item mb-4">
                         <button
-                            className="accordion-header text-left w-full bg-gray-100 p-4 rounded-t-lg focus:outline-none"
+                            className="accordion-header text-left w-full bg-greenPrimary p-4 rounded-t-lg text-white focus:outline-none"
                             onClick={() => document.getElementById('item4').classList.toggle('hidden')}
                         >
                             Kepemimpinan Desa
                         </button>
                         <div id="item4" className="accordion-content hidden p-4 bg-white border rounded-b-lg">
-                            <p>
+                            <p className="text-gray-900">
                                 Daftar Kepala Desa Margajaya:
                                 <ul className="list-disc ml-6 mt-2">
                                     <li>Dari tahun 1981 hingga 1982, Bapak M. Salikin (PJS)</li>
